@@ -15,8 +15,8 @@ def create_app():
   init_db(app)
 
   api = Api(app)
-  api.add_resource(HogeListAPI, '/hoges')
-  api.add_resource(HogeAPI, '/hoges/<id>')
+  api.add_resource(HogeListAPI, '/users')
+  api.add_resource(HogeAPI, '/users/<id>')
 
   return app
 

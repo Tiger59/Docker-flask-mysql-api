@@ -14,18 +14,18 @@ ma = Marshmallow()
 
 
 class HogeModel(db.Model):
-  __tablename__ = 'hoges'
+  __tablename__ = 'users'
 
   id = db.Column(UUIDType(binary=False), primary_key=True, default=uuid.uuid4)
   name = db.Column(db.String(255), nullable=False)
-  state = db.Column(db.String(255), nullable=False)
+  #state = db.Column(db.String(255), nullable=False)
 
   createTime = db.Column(db.DateTime, nullable=False, default=datetime.now)
   updateTime = db.Column(db.DateTime, nullable=False, default=datetime.now, onupdate=datetime.now)
 
-  def __init__(self, name, state):
+  def __init__(self, name):#+state
     self.name = name
-    self.state = state
+    #self.state = state
 
 
   def __repr__(self):
