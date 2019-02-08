@@ -1,6 +1,6 @@
 # Docker-flask-mysql-api
 
-PythonのFlaskでMySQLを利用したRESTfulなAPIをDocker環境で実装する  
+PythonのFlaskでMySQLを利用したRESTfulなAPIをDocker環境で実装  
 
 ## Install
 
