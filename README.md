@@ -7,6 +7,19 @@ PythonのFlaskでMySQLを利用したRESTfulなAPIをDocker環境で実装
 ```sh
 > git clone https://github.com/Tiger59/Docker-flask-mysql-api.git
 > cd Docker-flask-mysql-api
+```
+## make env file
+For example,
+```sh
+touch .env
+vi .env
+```
+
+```.env
+MYSQL_ROOT_PASSWORD=hoge
+```
+## Start-up!!
+```sh
 > docker-compose up -d
 > docker-compose exec api bash
 >> flask db upgrade
